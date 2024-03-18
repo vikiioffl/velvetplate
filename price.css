@@ -1,0 +1,160 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    cursor: pointer;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+header
+{
+    background-color: black;
+    display: flex;
+    padding: 20px 20px;
+    color: white;
+    font-family: sans-serif;
+    justify-content: space-between;
+    text-align: center;
+    font-weight: bold;
+    animation: header 1s ease-in-out;
+}
+@keyframes header {
+    0% 
+    {
+      transform: translateY(-100%);
+     }
+    
+}
+.main
+{
+    width: 100%;
+    display: flex;
+}
+.content
+{
+    width: 50%;
+    margin-top: 8%;
+    margin-left: 5%;
+    color: red;
+    animation: content 1s ease-in-out;
+}
+@keyframes content {
+    0%
+    {
+        opacity: 0;
+        transform: translateX(-50%);
+    }
+    
+}
+.content h1
+{
+    color: black;
+    margin-bottom: 2%;
+    letter-spacing: 2px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.content h4
+{
+
+    margin-bottom:5% ;
+    letter-spacing: 2px;
+    margin-left: 18%;
+    margin-top: 5%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: black;
+    font-weight: bold;
+    letter-spacing:3px ;
+   
+}
+.content li:hover
+{
+    color:black;
+}
+.content h3
+{
+    letter-spacing: 3px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.content h2
+{
+    margin-top: 8px;
+    letter-spacing:3px ;
+}
+.content li{
+    margin-top: 8%;
+}
+a{
+    color: red;
+    text-decoration: none;
+}
+.image
+{
+    width: 50%;
+    margin-top: 30%;
+    margin-left: 0%;
+    margin-right: 10%;
+    animation: image 1s ease-in-out;
+}
+@keyframes image {
+    0%{
+        opacity: 0;
+transform: translateX(100%);
+    }
+    
+}
+.image img
+{
+     width:100%;   
+    margin-right: 5px;
+    
+
+}
+@media screen and (max-width:1200px) {
+    .content
+    {
+       width: 100%;
+       text-align:center;
+    }   
+    .image
+ {
+    width: 100%;
+    position: absolute;
+    bottom: 1%;
+    display: flex;
+    justify-content: center;
+    float: left;
+
+ }
+    img{
+        width: 20rem;
+        padding: 2%;
+        margin-right: 10%;
+    }
+    
+}
+@media screen and (max-width:567px) {
+    .content
+    {
+       width: 100%;
+       text-align:center;
+       margin-left: 200%;
+    }   
+    .image
+ {
+    width: 100%;
+    position: absolute;
+    bottom: 1%;
+    display: flex;
+    justify-content: center;
+    float: left;
+
+ }
+    img{
+        width: 20rem;
+        padding: 2%;
+        margin-right: 10%;
+       float: left;
+    }
+    
+}
+
